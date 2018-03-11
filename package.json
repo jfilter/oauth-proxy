@@ -1,0 +1,17 @@
+{
+  "name": "oauth-proxy",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jfilter/oauth-proxy",
+  "author": "Johannes Filter <hi@jfilter.de>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
