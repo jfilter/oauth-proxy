@@ -4,10 +4,6 @@ const express = require("express");
 const clientSecret = process.env.CLIENT_SECRET;
 const hostname = process.env.HOSTNAME;
 
-const app = express();
-
-app.all("*", proxy);
-
 const proxy = (req, res, next) => {
   const { path, method, query } = req;
 
@@ -34,5 +30,9 @@ const proxy = (req, res, next) => {
     }
   );
 };
+
+const app = express();
+
+app.all("*", proxy);
 
 app.listen(5000);
