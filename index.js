@@ -13,6 +13,9 @@ const proxy = (req, res, next) => {
     query.client_secret = clientSecret;
   }
 
+  console.log(query);
+  console.log(url);
+
   request(
     url,
     {
