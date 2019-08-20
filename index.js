@@ -21,7 +21,6 @@ const proxy = (req, res, next) => {
     {
       method,
       formData: query
-      // json: true
     },
     (error, resApi, data) => {
       if (error) {
