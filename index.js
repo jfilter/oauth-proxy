@@ -17,7 +17,8 @@ const proxy = (req, res, next) => {
     url,
     {
       method,
-      body: query
+      body: query,
+      json: true
     },
     (error, resApi, data) => {
       if (error) {
